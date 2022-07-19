@@ -8,7 +8,7 @@
     <title>Expense Tracker</title>
   </head>
   <body>
-    <h2> ProGrad Expense Tracker</h2>
+    <h2>&nbsp;ProGrad Expense Tracker&nbsp;</h2>
 
     <div class="container">
       <h4>Your Balance</h4>
@@ -26,12 +26,12 @@
       </div>
     
       <div class="histroy">
-      <h3> Transaction History</h3>
+      <h3>Transaction History</h3>
       <ul id="list" class="list">
       </ul>
     </div>
-      <h3>Add new transaction</h3>
-      <form id="form">
+      <h2>Add new transaction</h2>
+      <form id="form" action = "Javascript:void()">
         <div class="form-control">
           <label for="text">Text(max 20 letter)</label>
           <input type="text" id="text" placeholder="Enter text..." />
@@ -41,9 +41,9 @@
             >Amount <br />
             (negative - expense, positive - income)</label
           >
-          <input type="number" id="amount" placeholder="Enter amount..." />
+          <input type="number" steps="0.01" id="amount" placeholder="Enter amount..." />
         </div>
-        <button class="btn">Add transaction</button>
+        <button class="btn" onclick="addTransaction()">Add transaction</button>
       </form>
     </div>
 
